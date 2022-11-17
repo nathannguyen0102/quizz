@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Mutiple choice quiz</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  </head>
+  <body>
+    <div class="timer">Time: <span id="time">45</span></div>
+    <div class="wrap">
+      <div id="start-screen" class="start">
+        <h1>Mutiple choices Quiz</h1>
+        <p>
+          You have 45 seconds to answer 3 mutiple choice questions, each time you choose wrong answer will penalize your time by 15 seconds
+        </p>
+        <button id="start">Start Quiz</button>
+      </div>
+
+      <div id="questions1" class="hide">
+        <h2 id="question-title">
+          What is the smallest header in HTML by default?
+        </h2>
+        <div class="rightchoice1">A. h6</div>
+        <div class="wrongchoice">B. h4</div>
+        <div class="wrongchoice">C. h2</div>
+        <div class="wrongchoice">D. h1</div>
+      </div>
+
+      <div id="questions2" class="hide">
+        <h2 id="question-title">
+          Which of the following is correct about HTML?
+        </h2>
+        <div class="wrongchoice">A. HTML uses Users Defined Tags</div>
+        <div class="rightchoice2">
+          B. HTML uses tags defined within the language
+        </div>
+        <div class="wrongchoice">C. Both A and B.</div>
+        <div class="wrongchoice">D. None of the above</div>
+      </div>
+
+      <div id="questions3" class="hide">
+        <h2 id="question-title">
+          Which of the following attribute is used to provide a unique name to
+          an element?
+        </h2>
+        <div class="wrongchoice">A. class</div>
+        <div class="rightchoice3">B. id</div>
+        <div class="wrongchoice">C. type</div>
+        <div class="wrongchoice">D. None of the above</div>
+      </div>
+
+      <div id="end-screen" class="hide">
+        <p>Your final score is <span id="final-score"></span>.</p>
+        <p>
+          Enter initials: <input type="text" id="initials" max="3" />
+          <button id="submit">Submit</button>
+          <p class="scoredisplay"></p>
+        </p>
+      </div>
+
+      <div id="feedback" class="feedback hide"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
